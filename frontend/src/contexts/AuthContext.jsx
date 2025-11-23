@@ -3,8 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 const AuthContext = createContext(null);
 
-const BACKEND_URL =
-    import.meta.env.VITE_BACKEND_URL || "http://localhost:3000";
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 export const AuthProvider = ({ children }) => {
     const navigate = useNavigate();
